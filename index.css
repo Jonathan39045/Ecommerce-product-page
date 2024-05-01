@@ -25,7 +25,7 @@
     margin:5px 0px 0px 0px;
     display:flex;
     justify-content: space-between;
-    border:2px solid red;
+    /* border:2px solid red; */
    
 }
 
@@ -34,7 +34,7 @@
     display:flex;
     column-gap:32px;
    color:#828283;
-   border:2px solid greenyellow;
+   /* border:2px solid greenyellow; */
    padding:10px;
    font-weight: 200;
    margin-left:6%;
@@ -66,7 +66,7 @@
 
 .div4
 {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     margin-right:4%;
 
 }
@@ -158,5 +158,31 @@
     background-color: #da6e2e;
     color:#ffff;
     font-weight: bold;
+}
+
+@media all and (min-width:319px) and (max-width:425px)
+{
+    .sub,.div7
+    {
+        display:none;
+    }
+
+    .div5,.div10{
+        display:grid;
+        gap:1rem;
+    }
+    .product
+    {
+    border-radius: 15px;
+    width:100%;
+    height:100%;
+    margin-left:0%;
+    cursor:pointer;
+    }
+    .div8
+    {
+        margin-top:5px;
+        margin-left:10px;
+    }
 }
 
