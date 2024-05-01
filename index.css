@@ -1,0 +1,162 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.attribution { 
+    font-size: 15px; 
+    text-align: center; 
+}
+
+.attribution a 
+{ 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* .div1
+{
+    padding:10px 10px 10px 10px;
+    
+} */
+
+.div2
+{
+    margin:5px 0px 0px 0px;
+    display:flex;
+    justify-content: space-between;
+    border:2px solid red;
+   
+}
+
+.div3
+{
+    display:flex;
+    column-gap:32px;
+   color:#828283;
+   border:2px solid greenyellow;
+   padding:10px;
+   font-weight: 200;
+   margin-left:6%;
+   
+}
+
+.sub
+{
+    display:flex;
+    column-gap:27px;
+}
+
+.div3 h2
+{
+    color:black;
+}
+.cart
+{
+    margin-bottom:10px;
+    margin-right:10px;
+}
+.person
+{
+    width:27%;
+    margin-left:20px;
+    margin-top:7px;
+
+}
+
+.div4
+{
+    border: 2px solid blue;
+    margin-right:4%;
+
+}
+
+.div5
+{
+    margin-top:5%;
+    display:flex;
+}
+
+.product
+{
+    border-radius: 15px;
+    width:75%;
+    height:100%;
+    margin-left:9%;
+    cursor:pointer;
+    /* padding:20px; */
+}
+
+.div7
+{
+    display:flex;
+    margin-top:10px;
+    margin-bottom: 10px;
+    width:fit-content;
+    justify-content: space-evenly;
+    margin-right:10px;
+    
+}
+
+.thumbnail_images
+{
+    width:10%;
+    height:15%;
+    border-radius: 10px;
+    cursor:pointer;
+   
+   
+   
+}
+.div8 h3
+{
+    color:#da6e2e;
+}
+
+.div8 p
+{
+    color:#828283;
+    line-height: 1.5rem;
+    margin-top:15px;
+    margin-bottom: 10px;
+}
+.div9
+{
+    display:flex;
+}
+.percent
+{
+    color:#da6e2e;
+    background-color: #ffefe2;
+    margin-left:10px;
+    padding:5px;
+    border-radius: 10px;
+}
+.price
+{
+    text-decoration: line-through;
+    font-weight: 200;
+}
+.div10 button
+{
+    cursor:pointer;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:30px;
+    padding-right:30px;
+    border-radius: 10px;
+    border:none;
+}
+
+.symbols
+{
+    /* display:flex; */
+    justify-content: space-around;
+}
+.crating
+{
+    background-color: #da6e2e;
+    color:#ffff;
+    font-weight: bold;
+}
+
