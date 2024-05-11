@@ -20,6 +20,23 @@
     
 } */
 
+.icons,.popup
+{
+    display:none;
+}
+
+.popup
+{
+    margin-top:30px;
+    width:400px;
+    border:2px solid red;
+    border-radius: 10px;
+    width:fit-content;
+    margin-right:90px;
+
+}
+
+
 .div2
 {
     margin:5px 0px 0px 0px;
@@ -41,14 +58,16 @@
    
 }
 .c{
-    cursor:pointer;
+    /* cursor:pointer; */
     text-decoration:none;
 }
 
 .c:hover{
+    cursor:pointer;
     margin-top:0.5px;
     color:#da6e2e;
     text-decoration:underline;
+    bottom:-5px;
     
 }
 
@@ -150,32 +169,43 @@
     text-decoration: line-through;
     font-weight: 200;
 }
-.div10 button
-{
-    cursor:pointer;
-    padding-top:10px;
-    padding-bottom:10px;
-    padding-left:30px;
-    padding-right:30px;
-    border-radius: 10px;
-    border:none;
-}
 
-.symbols
-{
-    /* display:flex; */
-    justify-content: space-around;
-}
 .crating
 {
     background-color: #da6e2e;
     color:#ffff;
     font-weight: bold;
+    padding-top:10px;
+    padding:10px 30px 10px 30px;
+    border-radius: 10px;
+    cursor:pointer;
+}
+.div11
+{
+    cursor: pointer;
+    padding:10px 20px 10px 20px;
+    border:2px solid red;
+    border-radius:10px;
+    width:fit-content;
+    justify-content:space-around;
+    margin-bottom: 10px;
+}
+.symbols
+{
+    border: none;
+}
+.minus
+{
+    margin-right:10px;
+}
+.plus
+{
+    margin-left:10px;
 }
 
 @media all and (min-width:319px) and (max-width:425px)
 {
-    .sub,.div7
+    .div7
     {
         display:none;
     }
@@ -197,5 +227,16 @@
         margin-top:5px;
         margin-left:10px;
     }
+    .icons
+{
+    display:block;
+}
+
+.sub 
+{
+    display:grid;
+    font-weight: 700;
+    color:black;
+}
 }
 
