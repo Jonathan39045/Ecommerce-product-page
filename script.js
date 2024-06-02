@@ -14,9 +14,9 @@ let title=document.querySelector("#title_of_shoes")
 let popup_price=document.querySelector("#prices")
 let price_with_quantity=document.querySelector("#price_with_quantity")
 let price_to_get_add=document.querySelector("#price_to_get_add")
-let final_ansers=document.querySelector("#answers")
+let final_answers=document.querySelector("#answers")
 let multiply_values=document.querySelector("#multiply")
-let equating_values=documnet.querySelector("#equating")
+let equating_values=document.querySelector("#equating")
 cart.addEventListener("click",(event)=>
 {
     event.preventDefault();
@@ -25,33 +25,32 @@ cart.addEventListener("click",(event)=>
         {
             display_popup.style.display="block"
             cart_popup.textContent=title.textContent
-            
             price_to_get_add.textContent=parseInt(numbers.textContent)
-            final_ansers.textContent=price_to_get_add.value*parseInt(price_with_quantity.textContent)
+            let a=price_with_quantity.textContent
+            let b=a.replace("$","")
+            let c=parseInt(b)     
+            let d=parseInt(price_to_get_add.textContent)
+           let m=c*d 
+
+
             if(numbers.textContent>0)
             {
-                // cart_textContent="Added to Cart"
-                // cart_popup.textContent.style.display="block"
                 cart_popup.textContent=title.textContent
                 price_with_quantity.textContent=popup_price.textContent
                 multiply_values.style.display="block"
                 equating_values.style.display="block"
+                final_answers.textContent=m
                 
             }
-            else{
-                // cart.textContent="Add to Cart"
+            if (d==0){
+        
                 cart_popup.textContent="Your cart is Empty"
-                price_with_quantity.textContent.style.display="none"
+                price_with_quantity.textContent.style.display=""
                 multiply_values.style.display="none"
                 equating_values.style.display="none"
                 
             }
         }
-    // else
-    // {
-    //     display_popup.style.display="none"
-    //     // cart.textContent="Add to Cart"
-    // }
 
 });
 
@@ -71,3 +70,11 @@ subtract.addEventListener("click",(event)=>{
    
     
 });
+
+
+// final_answers.textContent=price_to_get_add.value*parseInt(price_with_quantity.textContent)
+            // console.log(price_with_quantity.textContent) => $125.00  => String
+            // console.log(price_to_get_add.textContent) => 4  => String
+
+
+                        // c=125.00  => Number
