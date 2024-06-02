@@ -31,6 +31,7 @@ cart.addEventListener("click",(event)=>
             let c=parseInt(b)     
             let d=parseInt(price_to_get_add.textContent)
            let m=c*d 
+           let g=0
 
 
             if(numbers.textContent>0)
@@ -45,9 +46,12 @@ cart.addEventListener("click",(event)=>
             if (d==0){
         
                 cart_popup.textContent="Your cart is Empty"
-                price_with_quantity.textContent.style.display=""
+                console.log("ganapathy")
+                price_with_quantity.innerHTML="  "
                 multiply_values.style.display="none"
                 equating_values.style.display="none"
+                final_answers.textContent=" "
+                console.log("ajith")
                 
             }
         }
