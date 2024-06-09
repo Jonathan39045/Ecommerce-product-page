@@ -13,7 +13,10 @@
 { 
     color: hsl(228, 45%, 44%); 
 }
-
+body 
+{
+    background-color: #FFFEFF;
+}
 /* .div1
 {
     padding:10px 10px 10px 10px;
@@ -29,16 +32,17 @@
 {
     /* margin-top:30px; */
     width:400px;
-    border:2px solid blue;
+    /* border:2px solid black; */
     border-radius: 10px;
     width:fit-content;
     position:absolute;
-    top:19%;
-    left:82%;
+    top:23%;
+    left:79%;
     transform:translate(-50%,-50%);
-    z-index:999;
-    box-shadow: 0,0,0,10px rgba(0,0,0,0.9);
+    z-index:1000;
+    box-shadow: 0,10,10,10px rgba(0,0,0,0.9);
     padding: 10px 20px 10px 20px;
+    background-color: #FFFFFE;
     /* margin-right:90px; */
 
 }

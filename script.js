@@ -23,7 +23,7 @@ cart.addEventListener("click",(event)=>
     click_count=click_count+1
     if(click_count%2===1)
         {
-            display_popup.style.display="block"
+           
             cart_popup.textContent=title.textContent
             price_to_get_add.textContent=parseInt(numbers.textContent)
             let a=price_with_quantity.textContent
@@ -36,6 +36,7 @@ cart.addEventListener("click",(event)=>
 
             if(numbers.textContent>0)
             {
+                display_popup.style.display="block"
                 cart_popup.textContent=title.textContent
                 price_with_quantity.textContent=popup_price.textContent
                 multiply_values.style.display="block"
@@ -43,18 +44,24 @@ cart.addEventListener("click",(event)=>
                 final_answers.textContent=m
                 
             }
-            if (d==0){
-        
+            else if (d==0){
+                display_popup.style.display="block"
                 cart_popup.textContent="Your cart is Empty"
-                console.log("ganapathy")
-                price_with_quantity.innerHTML="  "
+                // console.log("ganapathy")
+                price_with_quantity.innerHTML=""
                 multiply_values.style.display="none"
                 equating_values.style.display="none"
                 final_answers.textContent=" "
-                console.log("ajith")
+                // console.log("ajith")
                 
             }
+            
         }
+        else{
+            // console.log("varata")
+            display_popup.style.display="none"
+        }
+    
 
 });
 
